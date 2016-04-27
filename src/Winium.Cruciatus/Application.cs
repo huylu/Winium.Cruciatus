@@ -5,6 +5,8 @@
     using System;
     using System.Diagnostics;
     using System.IO;
+    using System.Collections.Generic;
+    using System.Linq;
 
     using Winium.Cruciatus.Exceptions;
 
@@ -120,7 +122,7 @@
                                Arguments = arguments
                            };
 
-            this.process = Process.Start(info);
+            this.process = Process.Start(info);           
         }
 
         /// <summary>
